@@ -1,11 +1,9 @@
+-- Define a simple function
+greet :: String -> String
+greet name = "Hello, " ++ name ++ "!"
 
-summation str = "hello world" + str
-
+-- The main function
+main :: IO ()
 main = do
-    putStrLn "enter a string"
-    input <- getLine
-    putStrLn ("You entered: " ++ input)
-    putStrLn ("Length of the string: " ++ show (length input))
-    putStrLn ("Reversed string: " ++ reverse input)
-    summation input
-    putStrLn ("Summation: " ++ summation)
+    let name = "Rohit"
+    putStrLn (greet name)
